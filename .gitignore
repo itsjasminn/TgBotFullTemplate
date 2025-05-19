@@ -1,0 +1,7 @@
+.idea
+.venv
+.env
+locales
+migrations/versions/*
+test.py
+env_copy
