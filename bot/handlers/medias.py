@@ -30,7 +30,7 @@ async def catch_media_handler(message: Message, state: FSMContext):
     await state.update_data(media_id=media_id, media_type=media_type)
     await state.set_state(MediaStates.text)
     await message.answer(
-        "✍️ Mediya bilan birga yuboriladigan matnni kiriting yoki faqat mediya jo‘natish uchun /skip bosing.")
+        "✍️ Media bilan birga yuboriladigan matnni kiriting yoki faqat mediya jo‘natish uchun /skip bosing.")
 
 
 @media.message(MediaStates.text, IsAdmin())
